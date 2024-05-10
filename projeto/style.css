@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* modo claro */
+  --text-color: white; /* quando eu usar essa variavel vai aplicar o branco */
+  --bg--url: url(./img/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.02);
+  --switch-bg-url: url(./img/MoonStars.svg);
+}
+
+.light {
+  /* modo escuro */
+  --text-color: black;
+  --bg--url: url(./img/bg-mobile-light.jpg); /* cor de fundo escura modo DARK*/
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(./img/Sun.svg);
+}
+
+body {
+  /*background-image: url(./img/bg-mobile.jpg);
+  background-repeat: no-repeat; /* nao repetir a imagem */ /*
+  background-position: top center;  /* centralizar a imagem no centro */ /*
+  background-size: cover;  /*ele vai cobrir todo o espaco da tela */ /* background: color image repeat postion/size*/
+
+  background: var(--bg--url) no-repeat top center/cover;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  /* height: 712px;  /* altura*/ /* geralmente nao precisa colocar altura no css*/
+  width: 360px; /*largura*/
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+  display: flex;
+  margin: auto;
+  display: inline;
+}
+
+/* profile */
+#profile p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+/* switch */
+#switch {
+  /* border: 1px solid red; */
+  position: relative;
+  width: 64px;
+
+  margin: 4px auto;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  /* permite mudar o bota de lugar em camadas*/
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%); /* alinha o button no EIXO Y */
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color); /* surface-color-dark-mode */
+  border: 1px solid var(--stroke-color); /* estroke-color-dark-mode */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); /* para funcionar em outros navegadores */
+  border-radius: 9999px;
+}
+
+/* Aqui vai ficar a parte de links da lista */
+ul {
+  list-style: none; /* estilo da lista: nenhum */
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* espaco entre um e outro */
+
+  padding: 24px 0;
+}
+
+ul li a {
+  /*border: 1px solid red;*/
+
+  display: flex;
+  align-items: center; /* alinha no meio */
+  justify-content: center; /* centraliza no meio */
+
+  padding: 16px 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px; /* largura da borda*/
+
+  /* backdrop-filter: blur(8px);*/
+  -webkit-backdrop-filter: blur(4px);
+
+  text-decoration: none; /* nao ter linha embaixo da palavra*/
+  font-weight: bold; /* acima de 400 ele é fonte BOLD */
+
+  transition: background 0.2s;
+}
+
+/* pseudo-selector */
+ul li a:hover {
+  /* efeito quando passa o mouse em cima */
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--text-color);
+}
+
+#social-links {
+  /*gap: 16px;*/
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+}
+
+#social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: background 0.2s;
+  border-radius: 50%; /* 50% é uma bolinha perfeita*/
+}
+
+#social-links a:hover {
+  background: var(--highlight-color);
+  /*padding: 16px;*/
+}
+
+footer {
+  padding: 24px 0px;
+  text-align: center;
+  font-size: 14px;
+}

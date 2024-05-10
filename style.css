@@ -1,0 +1,32 @@
+* {
+    background-color: aquamarine;
+}
+
+.body {
+	background-color: greenyellow;
+}
+
+.body{
+	background-color: blue;
+}
+
+/*
+    especifidade in CSS
+*/
+
+#id {
+    /* peso: 100 */
+}
+
+.class {
+    /* peso: 10 */
+}
+
+element {
+    /* peso 1 */
+}
+
+#unico {
+    color: darkmagenta;
+}
+

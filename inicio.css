@@ -1,0 +1,17 @@
+header {
+    border: 4px solid rgb(0, 38, 255);
+
+    padding: 60px; /* preenchimento interno */
+}
+
+h1{
+    border: 3px solid greenyellow;
+
+    height: 60px;  /* altura */
+}
+
+p {
+    margin: 20px; /* espacamento de uma tag até outra*/
+
+    border: 1px solid red;
+}

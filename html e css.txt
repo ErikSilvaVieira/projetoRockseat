@@ -1,0 +1,100 @@
+
+	review in HTML:
+	
+sintaxe de tag:
+
+	<p>Frase...</p>
+
+atributos:
+	
+	<a href="https://rockseat.com.br">Ver site</a>
+	<img src="image.jpg" />
+
+//**************//
+
+Css: Cascading Style Sheets 
+
+Quando tiver duas ou mais declaracoes, a ultima é 
+a mais relevante
+
+{
+	background-color: lime;
+}
+
+{
+	background-color: blue;
+}
+	
+		#id {
+			/* peso: 100 */
+		}
+
+		.class {
+			/* peso: 10 */
+		}
+
+		element {
+			/* peso 1 */
+		}
+		
+		<p id="unico">Paragrafo aqui</p> --peso 100
+		<p class="qualquer">Texto aqui</p> --peso 10
+		<p>Outros assuntos aqui</p> --peso 1
+		
+//*************//
+
+	BOX MODEL:   --Importante!!
+	
+Todos os elementos html sao considerados uma CAIXA
+caixas possuem propiedades:
+	Conteudo, largura, altura, bordar, 
+ - preenchimento (espaco interno), 
+ - espacamento (espaco externo)
+ 
+	
+//**************//
+
+	Display Flex: Ao aplicar essa propiedade 
+a um elemento pai(container) todos os elementos filhos
+desse (container) sao organizados em sistema de 
+linhas ou colunas;
+
+
+	Margin: funciona fora do conteudo;
+	Padding: Espaco dentro do conteudo;
+	
+	
+//*************//
+
+	Tem que estudar DOM, e o javaScript puro, vai ser um diferencial;
+
+//****************//
+
+	GIT e GIIT HUB
+	
+	Repositório: Vai ficar o histórico do projeto;
+	
+	Branch: Sempre tem uma branch principal... 
+			*Linha do tempo;
+	
+	Commit: Salvamento na história;
+	
+	Stage:  Antes de enviar para o commit precisa ir para stage
+			*Preparação do que vai ser enviado para o commit;
+			
+
+
+	Comandos: 
+		
+		git init: inicia o repositorio
+		
+		git add . : adiciona todos os arquivos mudado no stage
+		
+		git commit -m "escreva aqui" : cria e descreve um ponto na historia
+		
+		git push: envia alteracoes para o repositorio remoto
+
+	
+	
+	/**//*/*//*/
+	continuar amanha a instalar e usar o git
