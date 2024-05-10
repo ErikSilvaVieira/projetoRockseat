@@ -33,6 +33,7 @@ body {
   background-size: cover;  /*ele vai cobrir todo o espaco da tela */ /* background: color image repeat postion/size*/
 
   background: var(--bg--url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -173,4 +174,16 @@ footer {
   padding: 24px 0px;
   text-align: center;
   font-size: 14px;
+}
+
+/* media queries */
+/* isso permite que a imagem em dispositivos menores se adaptem ao layout, não deixando espaco em branco */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./img/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./img/bg-desktop-light.jpg);
+  }
 }
