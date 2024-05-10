@@ -91,11 +91,15 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%); /* alinha o button no EIXO Y */
+  animation: slide-de-saida 0.5s forwards;
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-de-entrada 0.4s forwards;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -185,5 +189,25 @@ footer {
 
   .light {
     --bg-url: url(./img/bg-desktop-light.jpg);
+  }
+}
+
+/* animacao no botao "deslizar de um lado pro outro" */
+@keyframes slide-de-entrada {
+  /* comeca em ... e para em ... ai envia para o .light 'animation: slide-de-entrada 0.4s forwards' */
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-de-saida {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
