@@ -42,7 +42,8 @@ body * {
 
 #container {
   /* height: 712px;  /* altura*/ /* geralmente nao precisa colocar altura no css*/
-  width: 360px; /*largura*/
+  width: 100%; /*largura*/
+  max-width: 580px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
